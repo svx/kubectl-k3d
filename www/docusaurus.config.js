@@ -68,7 +68,7 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: 'kubectl-k3d',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -120,18 +120,18 @@ const config = {
           {
             title: 'More',
             items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
+              //{
+                //label: 'Blog',
+                //to: '/blog',
+              //},
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/svx/kubectl-k3d',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} kubectl-k3d. Built with Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
