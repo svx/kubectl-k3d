@@ -1,0 +1,23 @@
+extends: capitalization
+message: "'%s' should be in title case"
+level: warning
+scope: heading
+# $title, $sentence, $lower, $upper, or a pattern.
+match: $title
+style: Chicago # AP or Chicago; only applies when match is set to $title.
+exceptions:
+  - ABC
+  - add
+  - APICollection
+  - APIGateway
+  - APIPortal
+  - APIAccess
+  - CRD
+  - CRDs
+  - OpenAPI
+  - 'Managing APIs using CRDs'
+  - 'OpenAPI v3.0.x'
+  - 'Swagger v2'
+  - 'Additional Arguments'
+  - 'Add User'
+  - 'Add the Helm Repository'

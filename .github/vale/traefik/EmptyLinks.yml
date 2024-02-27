@@ -1,0 +1,11 @@
+extends: existence
+message: "Don't use empty links '%s'"
+ignorecase: true
+level: info
+scope: raw
+nonword: true
+tokens:
+    - (?:\[\]\(\))
+    - (?:\W\[\]\(\))
+    - (?:\[\]\(\))
+    - '(?:\(\))'

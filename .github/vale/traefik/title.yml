@@ -1,0 +1,16 @@
+extends: capitalization
+message: "'%s' should be in sentence case"
+level: suggestion
+scope: heading
+# $title, $sentence, $lower, $upper, or a pattern.
+match: $sentence
+#style: AP # AP or Chicago; only applies when match is set to $title.
+exceptions:
+  - ABC
+  - add
+  - APICollection
+  - APIGateway
+  - APIPortal
+  - APIAccess
+  - CRD
+  - CRDs
