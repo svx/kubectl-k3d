@@ -1,11 +1,11 @@
 /*
 Copyright © 2024 NAME HERE <EMAIL ADDRESS>
-
 */
 package main
 
 import (
 	"time"
+
 	"kubectl-k3d/cmd"
 
 	"github.com/carlmjohnson/versioninfo"

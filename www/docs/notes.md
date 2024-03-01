@@ -13,3 +13,5 @@
 ## Mage
 
 - https://carolynvanslyck.com/blog/2021/01/mage-is-my-favorite-make/
+- https://carolynvanslyck.com/blog/2022/07/magefiles-stop-on-first-error/
+- https://cloudnativeislamabad.hashnode.dev/say-the-magic-words-and-go-mage-will-take-care-of-the-rest
