@@ -5,7 +5,10 @@ package cmd
 
 import (
 	"fmt"
+	"log"
+	"os/exec"
 
+	"github.com/fatih/color"
 	"github.com/spf13/cobra"
 )
 
@@ -15,8 +18,18 @@ var listCmd = &cobra.Command{
 	Short: "List of all running k3d clusters",
 	Long:  `List all running k3d cluster.`,
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Println("list called")
+		//fmt.Println("list called")
+		color.Green("List of available k3d cluster")
+		listK3d()
 	},
+}
+
+func listK3d() {
+	out, err := exec.Command("k3d", "cluster", "list").Output()
+	if err != nil {
+		log.Fatal("Error:", err)
+	}
+	fmt.Println(string(out))
 }
 
 func init() {
