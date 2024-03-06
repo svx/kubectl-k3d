@@ -27,3 +27,7 @@ brew upgrade golangci-lint
 ```
 
 - https://olegk.dev/go-linters-configuration-the-right-version
+
+## Pat stuff
+
+- https://forum.golangbridge.org/t/help-with-simple-idiomatic-go/22308/3
