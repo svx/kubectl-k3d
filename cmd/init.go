@@ -6,7 +6,9 @@ package cmd
 import (
 	"fmt"
 	"os"
+	"os/exec"
 	"path"
+	"strings"
 	//"path/filepath"
 	//"io/ioutil"
 
@@ -24,7 +26,8 @@ If the configuration file already exists at this location,
 the command will show a message and stop.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("init called")
-		initConfig()
+		initCheck()
+		initConfigFile()
 	},
 }
 
@@ -48,7 +51,17 @@ the command will show a message and stop.`,
 	}
 } */
 
-func initConfig() {
+func initCheck() {
+	// Check if k3d is installed
+	if err := exec.Command("k3d").Run(); err != nil && strings.Contains(err.Error(), "k3d not found") {
+		fmt.Println("Please install k3d")
+		fmt.Println("Check https://k3d.io for more info")
+		os.Exit(1)
+	}
+
+}
+
+func initConfigFile() {
 	home, _ := os.UserHomeDir()
 	if _, err := os.Stat(path.Join(home, ".kube/k3d-config")); os.IsNotExist(err) {
 		fmt.Println("The file or directory does not exist")
