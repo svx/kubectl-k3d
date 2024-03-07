@@ -67,3 +67,8 @@ k3d cluster create foo --config k3d-default.yaml
 - https://medium.com/@originalrad50/building-ui-of-golang-cli-app-with-bubble-tea-68b61e25445e
 - https://github.com/elewis787/boa
 - https://earthly.dev/blog/tui-app-with-go/
+- https://github.com/inngest/inngest
+
+## Goreleaser
+
+- https://github.com/inngest/inngest/blob/main/.goreleaser.yml
