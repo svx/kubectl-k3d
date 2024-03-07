@@ -36,9 +36,10 @@ brew upgrade golangci-lint
 
 ### Config file
 
+- https://k3d.io/v5.4.1/usage/configfile/
 - https://chipnibbles.com/create-your-own-kubernetes-cluster/
 
-### Comands
+### Commands
 
 ```shell
 k3d cluster create foo --config k3d-default.yaml
