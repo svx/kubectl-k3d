@@ -31,3 +31,9 @@ brew upgrade golangci-lint
 ## Path stuff
 
 - https://forum.golangbridge.org/t/help-with-simple-idiomatic-go/22308/3
+
+## k3d
+
+### Config file
+
+- https://chipnibbles.com/create-your-own-kubernetes-cluster/
