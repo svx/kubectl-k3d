@@ -37,3 +37,23 @@ brew upgrade golangci-lint
 ### Config file
 
 - https://chipnibbles.com/create-your-own-kubernetes-cluster/
+
+### Comands
+
+```shell
+k3d cluster create foo --config k3d-default.yaml
+```
+
+```shell
+3d cluster create --config k3d-default.yaml
+```
+
+```shell
+ k3d cluster create \
+    "test1" \
+    --agents 2 \
+    --port="80:80@loadbalancer" \
+    --port="443:443@loadbalancer" \
+    --k3s-arg="--disable=traefik@server:0" \
+  --image docker.io/rancher/k3s:v1.27.5-k3s1
+```

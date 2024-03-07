@@ -1,0 +1,14 @@
+---
+apiVersion: k3d.io/v1alpha5
+kind: Simple
+metadata:
+  name: test-cluster
+servers: 1
+agents: 0
+image: docker.io/rancher/k3s:v1.27.5-k3s1
+options:
+  k3s:
+    extraArgs:
+      - arg: "--disable=traefik"
+        nodeFilters:
+          - server:*
