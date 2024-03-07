@@ -63,4 +63,7 @@ k3d cluster create foo --config k3d-default.yaml
 
 - https://medium.com/@nexidian/writing-an-interactive-cli-menu-in-golang-d6438b175fb6
 - https://elewis.dev/charming-cobras-with-bubbletea-part-1
+- https://github.com/elewis787/rkl
+- https://medium.com/@originalrad50/building-ui-of-golang-cli-app-with-bubble-tea-68b61e25445e
 - https://github.com/elewis787/boa
+- https://earthly.dev/blog/tui-app-with-go/
