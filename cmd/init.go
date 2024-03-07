@@ -1,16 +1,16 @@
 /*
 Copyright © 2024 NAME HERE <EMAIL ADDRESS>
-
 */
 package cmd
 
 import (
 	"fmt"
 	"os"
-	"path/filepath"
-	"io/ioutil"
+	"path"
+	//"path/filepath"
+	//"io/ioutil"
 
-	"github.com/fatih/color"
+	//"github.com/fatih/color"
 	"github.com/spf13/cobra"
 )
 
@@ -28,7 +28,7 @@ the command will show a message and stop.`,
 	},
 }
 
-func initConfig() (string, error) {
+/* func initConfig() (string, error) {
 	// Check if file, exists, if yes fail with error message
 	//Home, _ := os.UserHomeDir()
 	path, err := os.UserHomeDir()
@@ -46,8 +46,16 @@ func initConfig() (string, error) {
 		} else {
 			color.Green("OK, we're good to go")
 	}
-}
+} */
 
+func initConfig() {
+	home, _ := os.UserHomeDir()
+	if _, err := os.Stat(path.Join(home, ".kube/k3d-config")); os.IsNotExist(err) {
+		fmt.Println("The file or directory does not exist")
+	} else {
+		fmt.Println("The file or directory exists")
+	}
+}
 
 func init() {
 	rootCmd.AddCommand(initCmd)
