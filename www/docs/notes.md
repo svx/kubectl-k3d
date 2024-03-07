@@ -58,3 +58,9 @@ k3d cluster create foo --config k3d-default.yaml
     --k3s-arg="--disable=traefik@server:0" \
   --image docker.io/rancher/k3s:v1.27.5-k3s1
 ```
+
+## CLI UI
+
+- https://medium.com/@nexidian/writing-an-interactive-cli-menu-in-golang-d6438b175fb6
+- https://elewis.dev/charming-cobras-with-bubbletea-part-1
+- https://github.com/elewis787/boa
