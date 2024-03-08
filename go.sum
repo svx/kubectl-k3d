@@ -13,6 +13,10 @@ github.com/charmbracelet/lipgloss v0.10.0/go.mod h1:Wig9DSfvANsxqkRsqj6x87irdy12
 github.com/containerd/console v1.0.4 h1:F2g4+oChYvBTsASRTz8NP6iIAi97J3TtSAsLbIFn4ro=
 github.com/containerd/console v1.0.4/go.mod h1:YynlIjWYF8myEu6sdkwKIvGQq+cOckRm6So2avqoYAk=
 github.com/cpuguy83/go-md2man/v2 v2.0.3/go.mod h1:tgQtvFlXSQOSOSIRvRPT7W67SCa46tRHOmNcaadrF8o=
+github.com/cqroot/multichoose v0.1.1 h1:diGuKYKea9ePOTwUyUDor9zKRqKFWXGkYGqUa9+firU=
+github.com/cqroot/multichoose v0.1.1/go.mod h1:BJzIGqbQZNADPDuA3IzhmTMpRc2F3fZKysMRYP+Ydw8=
+github.com/cqroot/prompt v0.9.3 h1:00Sjiasl1QL7ttEphJ+1xAl0fKQi+7s2F3aY0x7wnz4=
+github.com/cqroot/prompt v0.9.3/go.mod h1:NZvCTeuvR9ew9Hkk7xlrZ9xdVH4AmkO9R0eeBkzOHXQ=
 github.com/elewis787/boa v0.1.2 h1:xNKWJ9X2MWbLSLLOA31N4l1Jdec9FZSkbTvXy3C8rw4=
 github.com/elewis787/boa v0.1.2/go.mod h1:EFDKuz/bYgQAKJQBnfHmB9i+bBzsaZJyyoSmOz6eBZI=
 github.com/fatih/color v1.16.0 h1:zmkK9Ngbjj+K0yRhTVONQh1p/HknKYSlNT+vZCzyokM=

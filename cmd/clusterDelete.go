@@ -1,12 +1,15 @@
 /*
 Copyright © 2024 NAME HERE <EMAIL ADDRESS>
-
 */
 package cmd
 
 import (
 	"fmt"
+	"errors"
+	"os"
 
+	"github.com/cqroot/prompt"
+	"github.com/cqroot/prompt/input"
 	"github.com/spf13/cobra"
 )
 
@@ -22,7 +25,33 @@ This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("clusterDelete called")
+		deletePrompt()
 	},
+}
+
+func CheckErr(err error) {
+	if err != nil {
+		if errors.Is(err, prompt.ErrUserQuit) {
+			fmt.Fprintln(os.Stderr, "Error:", err)
+			os.Exit(1)
+		} else {
+			panic(err)
+		}
+	}
+}
+
+func deletePrompt() {
+	//val1, err := prompt.New().Ask("Name of cluster:").Input("Blah blah")
+	//CheckErr(err)
+
+	val2, err := prompt.New().Ask("Cluster name:").Input(
+		"Blah blah",
+		input.WithHelp(true),
+	)
+	CheckErr(err)
+
+	//fmt.Printf("{ %s }, { %s }\n", val1, val2)
+	fmt.Printf("{ %s }\n", val2)
 }
 
 func init() {

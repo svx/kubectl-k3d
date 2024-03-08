@@ -69,6 +69,7 @@ k3d cluster create foo --config k3d-default.yaml
 - https://earthly.dev/blog/tui-app-with-go/
 - https://github.com/inngest/inngest
 - https://github.com/charmbracelet/taskcli
+- https://github.com/cqroot/prompt
 
 ## Goreleaser
 
