@@ -9,6 +9,13 @@
 ## Go Documentation
 
 - https://www.jetbrains.com/guide/go/tips/quick-documentation-go-doc-comments/
+- https://blog.kowalczyk.info/article/wOYk/advanced-command-execution-in-go-with-osexec.html
+- https://gist.github.com/jgfrancisco/6610078040b15b7e9611
+- https://www.reddit.com/r/golang/comments/r23jy9/getting_stdin_and_stdout_from_spawned_process_in/
+- https://international.github.io/2017/01/09/11-45-golang_redirect_os.Stdout
+- https://stackoverflow.com/questions/10473800/in-go-how-do-i-capture-stdout-of-a-function-into-a-string/10476304#10476304
+- https://www.socketloop.com/tutorials/golang-capture-stdout-of-a-child-process-and-act-according-to-the-result
+- 
 
 ## Mage
 
