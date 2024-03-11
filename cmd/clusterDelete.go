@@ -4,9 +4,11 @@ Copyright © 2024 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
-	"fmt"
 	"errors"
+	"fmt"
+	"log"
 	"os"
+	"os/exec"
 
 	"github.com/cqroot/prompt"
 	"github.com/cqroot/prompt/input"
@@ -52,6 +54,12 @@ func deletePrompt() {
 
 	//fmt.Printf("{ %s }, { %s }\n", val1, val2)
 	fmt.Printf("{ %s }\n", val2)
+	// Todo: Adjust to list and be able to choose cluster with keys from list.
+	out, err := exec.Command("k3d", "cluster", "delete", "%s", val2).Output()
+	if err != nil {
+		log.Fatal("Error:", err)
+	}
+	fmt.Println(string(out))
 }
 
 func init() {
